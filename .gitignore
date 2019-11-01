@@ -106,8 +106,8 @@ venv.bak/
 # zip files are uploaded to s3 buckets
 zip/*.zip
 
-# xml files are uploaded to s3 buckets
-xml/*.xml
+# txt files are uploaded to s3 buckets
+txt/*.txt
 
 # sql files are uploaded to s3 buckets
 sql/*.sql

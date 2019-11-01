@@ -4,7 +4,7 @@
     "maintainer": "Todd Greenwood-Geer",
     "name":           "data-oasis-daily-renewables-output",
     "repo":           "https://github.com/energy-analytics-project/data-oasis-daily-renewables-output",
-    "url" :           "http://content.caiso.com/green/renewrpt/__START___DailyRenewablesWatch.txt",
+    "url" :           "http://content.caiso.com/green/renewrpt/_START__DailyRenewablesWatch.txt",
     "start_date":     [2010, 4, 20],
     "description":    "Daily renewables watch. The renewables watch reports provide actual daily renewable production within the ISO grid.",
     "comments":	      "Custom parser required, as source data is NOT XML",
