@@ -225,7 +225,7 @@ def gen_renewable_sql(t):
                     sql         = f'INSERT INTO renewable (date, hour, geothermal, biomass, biogas, small_hydro, wind_total, solar_pv, solar_thermal) VALUES ("{date}", {hour}, {geothermal}, {biomass}, {biogas}, {small_hydro}, {wind_total}, {solar_pv}, {solar_thermal});'
                 else:
                     solar       = int_or_none(row[6])
-                    sql         = f'INSERT INTO renewable (date, hour, geothermal, biomass, biogas, small_hydro, wind_total, solar_pv, solar_thermal) VALUES ("{date}", {hour}, {geothermal}, {biomass}, {biogas}, {small_hydro}, {wind_total}, {solar});'
+                    sql         = f'INSERT INTO renewable (date, hour, geothermal, biomass, biogas, small_hydro, wind_total, solar) VALUES ("{date}", {hour}, {geothermal}, {biomass}, {biogas}, {small_hydro}, {wind_total}, {solar});'
                 res.append(sql)
         except Exception as e:
             log.error(logger, {
