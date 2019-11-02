@@ -17,8 +17,7 @@
 
 
 # -----------------------------------------------------------------------------
-# 20_unzp.py : unzip zip files in ZIP_DIR to XML_DIR in preparation for
-#              xml parsing and further injestion
+# 20_unzp.py : do nothing, files have already been unzipped in 10_down.py
 # -----------------------------------------------------------------------------
 
 from edl.resources import log
@@ -58,29 +57,9 @@ def config():
 # Entrypoint
 # -----------------------------------------------------------------------------
 def run(logger, manifest, config):
-    resource_name   = manifest['name']
-    xml_dir         = config['working_dir']
-    zip_dir         = config['source_dir']
-    state_file      = config['state_file']
-    resource_url    = manifest['url']
-    new_files = state.new_files(resource_name, state_file, zip_dir, '.zip')
-    log.debug(logger, {
-        "name"      : __name__,
-        "method"    : "run",
-        "resource"  : resource_name,
-        "url"       : resource_url,
-        "xml_dir"   : xml_dir,
-        "zip_dir"   : zip_dir,
-        "state_file": state_file,
-        "new_files_count" : len(new_files),
-        })
-    state.update(
-            zp.unzip(
-                resource_name,
-                new_files,
-                zip_dir,
-                xml_dir),
-            state_file)
+    # nothing to do, text files have already been copied to ./txt by
+    # 10_down.py.
+    pass
 
 
 # -----------------------------------------------------------------------------
