@@ -271,7 +271,7 @@ def int_or_none(v):
     try:
         return int(v)
     except:
-        return None
+        return "NULL"
 
 # -----------------------------------------------------------------------------
 # Entrypoint
