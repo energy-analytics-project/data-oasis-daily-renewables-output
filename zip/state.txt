@@ -3476,3 +3476,4 @@ http://content.caiso.com/green/renewrpt/20191027_DailyRenewablesWatch.txt
 http://content.caiso.com/green/renewrpt/20191028_DailyRenewablesWatch.txt
 http://content.caiso.com/green/renewrpt/20191029_DailyRenewablesWatch.txt
 http://content.caiso.com/green/renewrpt/20191030_DailyRenewablesWatch.txt
+http://content.caiso.com/green/renewrpt/20191031_DailyRenewablesWatch.txt
